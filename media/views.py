@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from importlib_metadata import files
 
-from media.forms import MediaItemForm,CategoryForm
+from media.forms import MediaItemForm, CategoryForm
 from .models import MediaItem
 from pprint import pprint
 from .sql_wrapper import get_data_from_db
@@ -23,7 +23,8 @@ def create(request):
         # os.path.getsize('Your file path')
         form = MediaItemForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            resp = form.save()
+            __calculate_file_size(resp.id)
             return redirect("/media/")
     else:
         form = MediaItemForm()
@@ -39,6 +40,7 @@ def update(request, id):
                              data=request.POST, files=request.FILES)
         if form.is_valid():
             form.save()
+            __calculate_file_size(id)
             return redirect("/media/")
     else:
         form = MediaItemForm(instance=media_item)
@@ -73,3 +75,9 @@ def add_category(request):
         form = CategoryForm()
 
     return render(request, "categories/edit.html", {"form": form, })
+
+
+def __calculate_file_size(id):
+    file_path = str(MediaItem.objects.get(id=id).path)
+    size = os.path.getsize(file_path)
+    MediaItem.objects.filter(id=id).update(size=size)
