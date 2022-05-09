@@ -10,7 +10,7 @@ from user_auth.models import User
 
 def user_directory_path(self, filename):
     # print('dir', dir(self))
-    return 'user_{0}/{1}'.format(getattr(self, "Created By"), filename)
+    return 'uploads/user_{0}/{1}'.format(getattr(self, "Created By_id"), filename)
 
 
 class MediaCategory(models.Model):
