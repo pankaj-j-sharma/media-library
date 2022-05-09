@@ -1,0 +1,7 @@
+django-admin startproject medialibrary
+python manage.py runserver
+
+python manage.py migrate 
+python manage.py createsuperuser
+pankaj
+qwerty@123
