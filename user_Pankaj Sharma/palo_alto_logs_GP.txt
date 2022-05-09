@@ -1,0 +1,287 @@
+Edition	Windows 10 Pro
+Version	20H2
+Installed on	‎4/‎22/‎2021
+OS build	19042.1237
+Experience	Windows Feature Experience Pack 120.2212.3530.0
+
+
+Device name	INMUMLPT-249066
+Full device name	INMUMLPT-249066.tatatechnologies.com
+Processor	   
+Installed RAM	8.00 GB (7.89 GB usable)
+Device ID	8C54F5E7-7F90-4A10-9F49-63852C39539B
+System type	64-bit operating system, x64-based processor
+Pen and touch	No pen or touch input is available for this display
+
+with HNJ_PUNE_GW
+=======================
+
+C:\WINDOWS\system32>route print
+===========================================================================
+Interface List
+  6...d4 81 d7 74 b9 3e ......Intel(R) Ethernet Connection I219-LM
+ 10...aa 6b ad 07 48 3d ......Microsoft Wi-Fi Direct Virtual Adapter
+ 13...ba 6b ad 07 48 3d ......Microsoft Wi-Fi Direct Virtual Adapter #2
+  5...a8 6b ad 07 48 3d ......Qualcomm QCA61x4A 802.11ac Wireless Adapter
+  1...........................Software Loopback Interface 1
+===========================================================================
+
+IPv4 Route Table
+===========================================================================
+Active Routes:
+Network Destination        Netmask          Gateway       Interface  Metric
+          0.0.0.0          0.0.0.0     192.168.18.1    192.168.18.45     50
+        127.0.0.0        255.0.0.0         On-link         127.0.0.1    331
+        127.0.0.1  255.255.255.255         On-link         127.0.0.1    331
+  127.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+     192.168.18.0    255.255.255.0         On-link     192.168.18.45    306
+    192.168.18.45  255.255.255.255         On-link     192.168.18.45    306
+   192.168.18.255  255.255.255.255         On-link     192.168.18.45    306
+        224.0.0.0        240.0.0.0         On-link         127.0.0.1    331
+        224.0.0.0        240.0.0.0         On-link     192.168.18.45    306
+  255.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+  255.255.255.255  255.255.255.255         On-link     192.168.18.45    306
+===========================================================================
+Persistent Routes:
+  None
+
+IPv6 Route Table
+===========================================================================
+Active Routes:
+ If Metric Network Destination      Gateway
+  1    331 ::1/128                  On-link
+  5    306 fe80::/64                On-link
+  5    306 fe80::79e2:9e13:d137:fe60/128
+                                    On-link
+  1    331 ff00::/8                 On-link
+  5    306 ff00::/8                 On-link
+===========================================================================
+Persistent Routes:
+  None
+
+C:\WINDOWS\system32>
+C:\WINDOWS\system32>
+C:\WINDOWS\system32>ipconfig /all
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : INMUMLPT-249066
+   Primary Dns Suffix  . . . . . . . : tatatechnologies.com
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : tatatechnologies.com
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Intel(R) Ethernet Connection I219-LM
+   Physical Address. . . . . . . . . : D4-81-D7-74-B9-3E
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
+   Physical Address. . . . . . . . . : AA-6B-AD-07-48-3D
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2
+   Physical Address. . . . . . . . . : BA-6B-AD-07-48-3D
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Qualcomm QCA61x4A 802.11ac Wireless Adapter
+   Physical Address. . . . . . . . . : A8-6B-AD-07-48-3D
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::79e2:9e13:d137:fe60%5(Preferred)
+   IPv4 Address. . . . . . . . . . . : 192.168.18.45(Preferred)
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : Monday, March 21, 2022 7:44:46 PM
+   Lease Expires . . . . . . . . . . : Monday, March 21, 2022 9:10:59 PM
+   Default Gateway . . . . . . . . . : 192.168.18.1
+   DHCP Server . . . . . . . . . . . : 192.168.18.1
+   DHCPv6 IAID . . . . . . . . . . . : 61369261
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-27-FF-F3-EA-D4-81-D7-74-B9-3E
+   DNS Servers . . . . . . . . . . . : fe80::1%5
+                                       192.168.18.1
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+C:\WINDOWS\system32>tracert 8.8.8.8
+
+Tracing route to dns.google [8.8.8.8]
+over a maximum of 30 hops:
+
+  1     7 ms     2 ms     3 ms  192.168.18.1
+  2    13 ms    21 ms    16 ms  10.195.192.1
+^C
+C:\WINDOWS\system32>tasklist
+ERROR: Invalid class
+
+C:\WINDOWS\system32>systeminfo
+Loading Operating System Information ...ERROR: Invalid class
+
+C:\WINDOWS\system32>
+
+
+with Bangalore_GW
+===================
+
+C:\WINDOWS\system32>route print
+===========================================================================
+Interface List
+ 58...02 50 41 00 00 01 ......PANGP Virtual Ethernet Adapter #2
+  6...d4 81 d7 74 b9 3e ......Intel(R) Ethernet Connection I219-LM
+ 10...aa 6b ad 07 48 3d ......Microsoft Wi-Fi Direct Virtual Adapter
+ 13...ba 6b ad 07 48 3d ......Microsoft Wi-Fi Direct Virtual Adapter #2
+  5...a8 6b ad 07 48 3d ......Qualcomm QCA61x4A 802.11ac Wireless Adapter
+  1...........................Software Loopback Interface 1
+===========================================================================
+
+IPv4 Route Table
+===========================================================================
+Active Routes:
+Network Destination        Netmask          Gateway       Interface  Metric
+          0.0.0.0          0.0.0.0     192.168.18.1    192.168.18.45     50
+         10.0.0.0        255.0.0.0         On-link      10.10.105.44      1
+     10.10.105.44  255.255.255.255         On-link      10.10.105.44    257
+   10.255.255.255  255.255.255.255         On-link      10.10.105.44    257
+     100.70.29.32  255.255.255.224         On-link      10.10.105.44      1
+     100.70.29.63  255.255.255.255         On-link      10.10.105.44    257
+   115.110.208.83  255.255.255.255     192.168.18.1    192.168.18.45     50
+        127.0.0.0        255.0.0.0         On-link         127.0.0.1    331
+        127.0.0.1  255.255.255.255         On-link         127.0.0.1    331
+  127.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+   154.59.123.124  255.255.255.255         On-link      10.10.105.44      1
+       172.16.0.0      255.240.0.0         On-link      10.10.105.44      1
+    172.28.76.101  255.255.255.255         On-link      10.10.105.44      1
+   172.31.255.255  255.255.255.255         On-link      10.10.105.44    257
+      192.168.0.0      255.255.0.0         On-link      10.10.105.44      1
+     192.168.18.0    255.255.255.0         On-link     192.168.18.45    306
+    192.168.18.45  255.255.255.255         On-link     192.168.18.45    306
+   192.168.18.255  255.255.255.255         On-link     192.168.18.45    306
+  192.168.255.255  255.255.255.255         On-link      10.10.105.44    257
+        224.0.0.0        240.0.0.0         On-link         127.0.0.1    331
+        224.0.0.0        240.0.0.0         On-link     192.168.18.45    306
+        224.0.0.0        240.0.0.0         On-link      10.10.105.44    257
+  255.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+  255.255.255.255  255.255.255.255         On-link     192.168.18.45    306
+  255.255.255.255  255.255.255.255         On-link      10.10.105.44    257
+===========================================================================
+Persistent Routes:
+  None
+
+IPv6 Route Table
+===========================================================================
+Active Routes:
+ If Metric Network Destination      Gateway
+  1    331 ::1/128                  On-link
+  5    306 fe80::/64                On-link
+  5    306 fe80::79e2:9e13:d137:fe60/128
+                                    On-link
+  1    331 ff00::/8                 On-link
+  5    306 ff00::/8                 On-link
+===========================================================================
+Persistent Routes:
+  None
+
+C:\WINDOWS\system32>ipconfig /all
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : INMUMLPT-249066
+   Primary Dns Suffix  . . . . . . . : tatatechnologies.com
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : tatatechnologies.com
+
+Ethernet adapter Ethernet 3:
+
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : PANGP Virtual Ethernet Adapter #2
+   Physical Address. . . . . . . . . : 02-50-41-00-00-01
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   IPv4 Address. . . . . . . . . . . : 10.10.105.44(Preferred)
+   Subnet Mask . . . . . . . . . . . : 255.255.255.255
+   Default Gateway . . . . . . . . . :
+   DHCPv6 IAID . . . . . . . . . . . : 973230145
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-27-FF-F3-EA-D4-81-D7-74-B9-3E
+   DNS Servers . . . . . . . . . . . : 172.28.76.101
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Intel(R) Ethernet Connection I219-LM
+   Physical Address. . . . . . . . . : D4-81-D7-74-B9-3E
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
+   Physical Address. . . . . . . . . : AA-6B-AD-07-48-3D
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2
+   Physical Address. . . . . . . . . : BA-6B-AD-07-48-3D
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Qualcomm QCA61x4A 802.11ac Wireless Adapter
+   Physical Address. . . . . . . . . : A8-6B-AD-07-48-3D
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::79e2:9e13:d137:fe60%5(Preferred)
+   IPv4 Address. . . . . . . . . . . : 192.168.18.45(Preferred)
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : Monday, March 21, 2022 7:44:47 PM
+   Lease Expires . . . . . . . . . . : Monday, March 21, 2022 9:14:09 PM
+   Default Gateway . . . . . . . . . : 192.168.18.1
+   DHCP Server . . . . . . . . . . . : 192.168.18.1
+   DHCPv6 IAID . . . . . . . . . . . : 61369261
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-27-FF-F3-EA-D4-81-D7-74-B9-3E
+   DNS Servers . . . . . . . . . . . : fe80::1%5
+                                       192.168.18.1
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+C:\WINDOWS\system32>tasklist
+ERROR: Invalid class
+
+C:\WINDOWS\system32>systeminfo
+Loading Operating System Information ...ERROR: Invalid class
+
+C:\WINDOWS\system32>
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+{% extends "layouts/base.html" %}
+{% block title %} Details {% endblock %} 
+{% block stylesheets %}{% endblock stylesheets %}
+{% block content %}
+
+<div class="pcoded-content">
+    <div class="pcoded-inner-content">
+        <div class="main-body">
+            <div class="page-wrapper">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-block table-border-style">
+
+                                <div class="card-header">
+                                    <h5>Media Item Details</h5>
+                                </div>
+                                <div class="card-body">
+                                    {% for media in all_media %}
+                                        <dl class="dl-horizontal row">
+                                            <dt class="col-sm-3">Name</dt>
+                                            <dd class="col-sm-9">{{media.name}}</dd>
+                                            <dt class="col-sm-3">Type</dt>
+                                            <dd class="col-sm-9">{{media.type}}</dd>
+                                            <dt class="col-sm-3">Category</dt>
+                                            <dd class="col-sm-9">{{media.category}}</dd>
+                                            <dt class="col-sm-3">Size</dt>
+                                            <dd class="col-sm-9">{{media.size}}</dd>
+                                            <dt class="col-sm-3">Created</dt>
+                                            <dd class="col-sm-9">{{media.created_on}}</dd>
+                                            <dt class="col-sm-3">Created By</dt>
+                                            <dd class="col-sm-9">{{media.created_by}}</dd>
+                                            <dt class="col-sm-3">Path</dt>
+                                            <dd class="col-sm-9">{{media.path}}</dd>
+                                        </dl>
+                                    {% endfor %}    
+                                </div>                                
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+
+{% endblock content %}
+{% block javascripts %}{% endblock javascripts %}

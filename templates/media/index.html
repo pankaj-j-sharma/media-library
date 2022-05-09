@@ -1,0 +1,80 @@
+{% extends "layouts/base.html" %}
+{% block title %} Media {% endblock %} 
+{% block stylesheets %}{% endblock stylesheets %}
+{% block content %}
+
+<div class="pcoded-content">
+    <div class="pcoded-inner-content">
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title" style="display:none;">
+                            <h5 class="m-b-10"></h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{% url 'index' %}"><i class="feather icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="javascript:">Home</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-body">
+            <div class="page-wrapper">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-block table-border-style">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Name</th>
+                                                <th>Type</th>
+                                                <th>Category</th>
+                                                <th>Size</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for media in all_media %}
+                                            <tr>
+                                                <th scope="row">{{media.id}}</th>
+                                                <td>{{media.name}}</td>
+                                                <td>{{media.type}}</td>
+                                                <td>{{media.category}}</td>
+                                                <td>{{media.size}}</td>
+                                                <td>
+                                                    <span>
+                                                        <a href="{% url 'media_update' media.id %}">
+                                                            <i class="feather icon-edit-1" style="padding-right:5px;cursor:pointer;"></i>
+                                                        </a>
+                                                        <a href="{% url 'media_delete' media.id %}">
+                                                            <i class="feather icon-delete" style="padding-right:5px;cursor:pointer;"></i>
+                                                        </a>
+                                                        <a href="{% url 'media_detail' media.id %}">
+                                                            <i class="feather icon-eye" style="padding-right:5px;cursor:pointer;"></i>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <a href="{% url 'create_new' %}">
+                                    <button type="button" class="btn btn-outline-primary" title="" data-toggle="tooltip" data-original-title="Add your own media file">Add Media</button>                                
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+{% block javascripts %}{% endblock javascripts %}
